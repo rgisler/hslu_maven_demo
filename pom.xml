@@ -2,21 +2,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ch.hslu</groupId>
-    <artifactId>oop_maven_template</artifactId>
+    <groupId>ch.hslu.demo</groupId>
+    <artifactId>hslu_maven_demo</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>oop_maven_template</name>
+    <name>hslu_maven_demo</name>
     <description>
-        Projekt-Template für Java-Projekte des Moduls OOP. Details siehe unter Beschreibung.
+        Demo-Projekt für Java/Maven. Continuous Integration und Codequalität.
     </description>
-    <url>https://jenkins-global.el.eee.intern/jenkins/view/OOP/job/oop_samples-develop/site/</url>
-
-    <!-- TODO: Für Maven 3.5 zu entfernen, wenn versions-Plugin bereit -->
-    <prerequisites>
-        <maven>3.0.1</maven>
-    </prerequisites>
+    <url>https://github.com/rgisler/hslu_maven_demo</url>
 
     <organization>
         <name>Hochschule Luzern - Informatik</name>
@@ -43,24 +38,23 @@
     </developers>
 
     <scm>
-        <connection>scm:git:https://${developer.id}@gitlab.enterpriselab.ch/${group.id}/${project.artifactId}.git</connection>
-        <developerConnection>scm:git:ssh://git@gitlab.enterpriselab.ch/${group.id}/${project.artifactId}.git</developerConnection>
-        <url>https://gitlab.enterpriselab.ch/${group.id}/${project.artifactId}/tree/develop</url>
+        <connection>scm:git:https://github.com/rgisler/hslu_maven_demo.git</connection>
+        <developerConnection>scm:git:git@github.com:rgisler/hslu_maven_demo.git</developerConnection>
+        <url>https://github.com/rgisler/hslu_maven_demo/blob/master/</url>
         <tag>HEAD</tag>
     </scm>
 
     <issueManagement>
-        <system>GitLab auf ELab - HSLU I</system>
-        <url>https://gitlab.enterpriselab.ch/${group.id}/${project.artifactId}/issues</url>
+        <system>GitHub</system>
+        <url>https://github.com/rgisler/hslu_maven_demo/issues</url>
     </issueManagement>
 
     <ciManagement>
-        <system>Jenkins auf ELab - HSLU I</system>
-        <url>https://jenkins-global.el.eee.intern/jenkins/view/OOP/job/${project.artifactId}-develop/</url>
+        <system>CircleCI</system>
+        <url>https://circleci.com/gh/rgisler/hslu_maven_demo/</url>
     </ciManagement>
 
     <properties>
-        <group.id>oop</group.id>
         <developer.id>zbgisler</developer.id>
 
         <project.build.targetJdk>1.8</project.build.targetJdk>
@@ -102,12 +96,6 @@
                 <artifactId>junit</artifactId>
                 <version>4.12</version>
                 <scope>test</scope>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.hamcrest</groupId>
-                        <artifactId>hamcrest-core</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.hamcrest</groupId>
@@ -285,25 +273,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-                <!-- TODO: Nur für altes Maven mit Coloring notwendig. -->
-                <dependencies>
-                    <dependency>
-                        <groupId>org.slf4j</groupId>
-                        <artifactId>jcl-over-slf4j</artifactId>
-                        <version>1.7.5</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.slf4j</groupId>
-                        <artifactId>slf4j-jdk14</artifactId>
-                        <version>1.7.5</version>
-                    </dependency>
-                </dependencies>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
             </plugin>
-            <!-- TODO: Für Maven 3.5 vorbereitet -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
@@ -411,7 +385,6 @@
 
     <reporting>
         <plugins>
-            <!-- TODO: Kann mit Versionskontrollsystem aktiviert werden. 
             <plugin>
                <groupId>org.apache.maven.plugins</groupId>
                <artifactId>maven-changelog-plugin</artifactId>
@@ -421,7 +394,6 @@
                   <range>365</range>
                </configuration>
             </plugin>
-            -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-changes-plugin</artifactId>
@@ -512,9 +484,9 @@
 
     <distributionManagement>
         <site>
-            <id>oop_maven_template</id>
-            <name>oop_maven_template</name>
-            <url>https://jenkins-global.el.eee.intern/jenkins/view/OOP/job/oop_maven_template-develop/site/</url>
+            <id>hslu_maven_demo</id>
+            <name>hslu_maven_demo</name>
+            <url>https://dummy/</url>
         </site>
     </distributionManagement>
 </project>
