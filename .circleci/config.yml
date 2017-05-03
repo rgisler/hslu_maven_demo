@@ -1,1 +1,8 @@
 version: 2
+jobs:
+  build:
+    docker:
+      - image: oraclejdk:8
+    steps:
+      - checkout
+      - run: mvn test -B
