@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/hslu_maven_demo
     docker:
-      - image: openjdk:8
+      - image: maven:3.5.0-jdk-8
     steps:
       - checkout
       - run: mvn test -B
