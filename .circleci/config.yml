@@ -1,4 +1,9 @@
 version: 2
-machine:
-   java:
-       version: openjdk8
+jobs:
+  build:
+    working_directory: ~/hslu_maven_demo
+    docker:
+      - image: openjdk:8
+    steps:
+      - checkout
+      - run: mvn test -B
