@@ -1,6 +1,7 @@
 version: 2
 jobs:
   build:
+    working_directory: ~/hslu_maven_demo
     docker:
       - image: oraclejdk:8
     steps:
