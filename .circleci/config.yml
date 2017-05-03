@@ -8,3 +8,5 @@ jobs:
       - checkout
       - run: mvn dependency:go-offline -B
       - run: mvn test -B
+      - store_test_results:
+          path: ./target/surefire-reports
