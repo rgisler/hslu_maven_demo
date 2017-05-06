@@ -67,23 +67,16 @@ public final class Point {
      * @return Nummer des Quadranten.
      */
     public int getQuadrant() {
-        int quadrant = NO_QUADRANT;
-        if (this.x != 0 && this.y != 0) {
-            if (this.x > 0) {
-                if (this.y > 0) {
-                    quadrant = QUADRANT_1;
-                } else {
-                    quadrant = QUADRANT_4;
-                }
-            } else {
-                if (this.y > 0) {
-                    quadrant = QUADRANT_2;
-                } else {
-                    quadrant = QUADRANT_3;
-                }
-            }
+        if (this.x > 0 && this.y > 0) {
+            return QUADRANT_1;
+        } else if (this.x < 0 && this.y > 0) {
+            return QUADRANT_2;
+        } else if (this.x < 0 && this.y < 0) {
+            return QUADRANT_3;
+        } else if (this.x > 0 && this.y < 0) {
+            return QUADRANT_4;
         }
-        return quadrant;
+        return NO_QUADRANT;
     }
 
     /**
