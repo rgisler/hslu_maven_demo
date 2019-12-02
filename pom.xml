@@ -74,7 +74,7 @@
         <jacocoPlugin.version>0.7.9</jacocoPlugin.version>
         <javadocPlugin.version>2.10.4</javadocPlugin.version>
         <jxrPlugin.version>2.5</jxrPlugin.version>
-        <pmdPlugin.version>3.8</pmdPlugin.version>
+        <pmdPlugin.version>3.12.0</pmdPlugin.version>
         <sourcePlugin.version>3.0.1</sourcePlugin.version>
         <surefirePlugin.version>2.20</surefirePlugin.version>
         <surefireReportPlugin.version>${surefirePlugin.version}</surefireReportPlugin.version>
