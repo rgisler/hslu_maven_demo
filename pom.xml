@@ -81,7 +81,7 @@
         <failsafePlugin.version>${surefirePlugin.version}</failsafePlugin.version>
         <findbugsPlugin.version>3.0.5</findbugsPlugin.version>
 
-        <log4j2.version>2.9.0</log4j2.version>
+        <log4j2.version>2.12.1</log4j2.version>
     </properties>
 
     <dependencyManagement>
