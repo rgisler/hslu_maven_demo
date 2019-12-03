@@ -78,7 +78,7 @@
         <sourcePlugin.version>3.0.1</sourcePlugin.version>
         <surefirePlugin.version>2.20</surefirePlugin.version>
         <surefireReportPlugin.version>${surefirePlugin.version}</surefireReportPlugin.version>
-        <failsafePlugin.version>${surefirePlugin.version}</failsafePlugin.version>
+        <failsafePlugin.version>2.22.2</failsafePlugin.version>
         <findbugsPlugin.version>3.0.5</findbugsPlugin.version>
 
         <log4j2.version>2.9.0</log4j2.version>
