@@ -77,7 +77,7 @@
         <pmdPlugin.version>3.8</pmdPlugin.version>
         <sourcePlugin.version>3.0.1</sourcePlugin.version>
         <surefirePlugin.version>2.20</surefirePlugin.version>
-        <surefireReportPlugin.version>${surefirePlugin.version}</surefireReportPlugin.version>
+        <surefireReportPlugin.version>2.22.2</surefireReportPlugin.version>
         <failsafePlugin.version>${surefirePlugin.version}</failsafePlugin.version>
         <findbugsPlugin.version>3.0.5</findbugsPlugin.version>
 
