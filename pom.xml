@@ -72,7 +72,7 @@
         <mavenChangelogPlugin.version>2.3</mavenChangelogPlugin.version>
         <checkstylePlugin.version>2.17</checkstylePlugin.version>
         <jacocoPlugin.version>0.7.9</jacocoPlugin.version>
-        <javadocPlugin.version>2.10.4</javadocPlugin.version>
+        <javadocPlugin.version>3.1.1</javadocPlugin.version>
         <jxrPlugin.version>2.5</jxrPlugin.version>
         <pmdPlugin.version>3.8</pmdPlugin.version>
         <sourcePlugin.version>3.0.1</sourcePlugin.version>
